@@ -15,7 +15,7 @@ This is an internal review version; all pages carry a `noindex` tag.
 |---|---|
 | `index.html` 외 HTML | 사이트 (국문 20면, `en/` 영문 20면) |
 | `files/` | 재배포가 허락된 전문 PDF. 파일별 라이선스와 근거는 [`files/LICENSES.md`](files/LICENSES.md) |
-| `data/works.json`, `data/works.csv` | 서지 전체 1,150건. 서고 페이지와 같은 데이터다 |
+| `data/works.json`, `data/works.csv` | 서지 전체 1,148건. 서고 페이지와 같은 데이터다 |
 
 ## 전문을 싣는 기준
 
