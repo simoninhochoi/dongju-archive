@@ -26,7 +26,7 @@
 <main>
 
   <h1 class="page">사우 네트워크<span class="hanja">師友</span></h1>
-  <p class="subtitle">스승과 벗의 그물 · 5세대 15인 · 관계는 네 갈래로 나누어 그린다</p>
+  <p class="subtitle">스승과 벗의 그물 · 동주를 가운데 두고 세대마다 바깥으로 번지는 물결(波紋) · 5세대 15인</p>
 
   <div class="legend">
     <span><i></i> 사승 師承 — 지도·직접 사사</span>
@@ -36,84 +36,82 @@
   </div>
 
   <div class="tree-wrap" style="margin-top:14px">
-    <svg viewBox="0 0 1120 600" xmlns="http://www.w3.org/2000/svg" role="img"
-         aria-label="5세대 15인의 사우 네트워크. 사승·교우·동학·참조 네 관계를 색으로 구분한다">
+    <svg class="ripple" viewBox="0 0 1000 918" xmlns="http://www.w3.org/2000/svg" role="img"
+         aria-label="동주 이용희를 가운데 두고 세대마다 동심원으로 넓어지는 5세대 15인의 사우 네트워크. 사승·교우·동학·참조 네 관계를 색으로 구분한다">
+      <defs><radialGradient id="ripple-bg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ece6da"/><stop offset="1" stop-color="#ece6da" stop-opacity="0"/></radialGradient></defs>
+      <circle cx="500" cy="470" r="455" fill="url(#ripple-bg)"/>
 
+      <!-- ── 세대의 고리 ── -->
       <g>
-        <text class="genlabel" x="8" y="42">1세대</text>
-        <text class="genlabel" x="8" y="144">2세대</text>
-        <text class="genlabel" x="8" y="246">3세대</text>
-        <text class="genlabel" x="8" y="348">4세대</text>
-        <text class="genlabel" x="8" y="450">5세대</text>
+        <circle class="ring" cx="500" cy="470" r="115" stroke-opacity="1"/>
+        <text class="genlabel" x="500" y="600" text-anchor="middle">2세대</text>
+        <circle class="ring" cx="500" cy="470" r="205" stroke-opacity="0.85"/>
+        <text class="genlabel" x="500" y="690" text-anchor="middle">3세대</text>
+        <circle class="ring" cx="500" cy="470" r="295" stroke-opacity="0.7"/>
+        <text class="genlabel" x="500" y="780" text-anchor="middle">4세대</text>
+        <circle class="ring" cx="500" cy="470" r="400" stroke-opacity="0.55"/>
+        <text class="genlabel" x="500" y="904" text-anchor="middle">5세대 · 김종학과 복어회 9인</text>
       </g>
 
-      <!-- ── 참조 (보라 점선) ── -->
+      <!-- ── 참조 ── -->
       <g>
-        <path class="edge ref" d="M520,60 C880,120 960,320 1010,468"/>
-        <path class="edge ref" d="M520,60 C230,130 170,320 210,468"/>
-        <path class="edge ref" d="M520,60 C420,140 400,200 460,240"/>
+        <path class="edge ref" d="M500,470 L623.6,89.6"/>
+        <path class="edge ref" d="M500,470 L900,470"/>
+        <path class="edge ref" d="M500,470 L500,265"/>
       </g>
 
-      <!-- ── 교우 (주황 실선) ── -->
+      <!-- ── 동학 ── -->
       <g>
-        <path class="edge hak" d="M340,152 Q470,186 600,152"/>
-        <path class="edge hak" d="M600,152 Q530,200 460,254"/>
-        <path class="edge hak" d="M460,254 Q530,304 600,356"/>
-        <path class="edge hak" d="M600,356 Q400,420 210,468"/>
-        <path class="edge hak" d="M600,356 Q455,420 310,468"/>
-        <path class="edge hak" d="M460,254 Q600,360 710,468"/>
-        <path class="edge hak" d="M600,356 Q355,420 110,468"/>
+        <path class="edge dong" d="M823.6,234.9 A400,400 0 0 1 900,470"/>
+        <path class="edge dong" d="M900,470 A400,400 0 0 1 823.6,705.1"/>
+        <path class="edge dong" d="M823.6,705.1 A400,400 0 0 1 623.6,850.4"/>
+        <path class="edge dong" d="M623.6,850.4 A400,400 0 0 1 376.4,850.4"/>
+        <path class="edge dong" d="M376.4,850.4 A400,400 0 0 1 176.4,705.1"/>
+        <path class="edge dong" d="M176.4,705.1 A400,400 0 0 1 100,470"/>
+        <path class="edge dong" d="M100,470 A400,400 0 0 1 176.4,234.9"/>
+        <path class="edge dong" d="M176.4,234.9 A400,400 0 0 1 376.4,89.6"/>
+        <path class="edge dong" d="M376.4,89.6 A400,400 0 0 1 623.6,89.6"/>
+        <path class="edge dong skip" d="M900,470 L862,470 A362,362 0 0 1 207.1,682.8 L176.4,705.1"/>
+        <path class="edge dong skip" d="M623.6,850.4 L616.8,829.5 A378,378 0 0 1 194.2,247.8 L176.4,234.9"/>
+        <path class="edge dong skip" d="M176.4,705.1 L207.1,682.8 A362,362 0 0 1 611.9,125.7 L623.6,89.6"/>
+        <path class="edge dong skip" d="M623.6,89.6 L616.8,110.5 A378,378 0 0 1 805.8,692.2 L823.6,705.1"/>
       </g>
 
-      <!-- ── 동학 (녹색 파선) : 5세대 내부 ── -->
+      <!-- ── 교우 ── -->
       <g>
-        <path class="edge dong" d="M110,480 Q160,524 210,480"/>
-        <path class="edge dong" d="M210,480 Q260,524 310,480"/>
-        <path class="edge dong" d="M310,480 Q360,524 410,480"/>
-        <path class="edge dong" d="M410,480 Q460,524 510,480"/>
-        <path class="edge dong" d="M510,480 Q560,524 610,480"/>
-        <path class="edge dong" d="M610,480 Q660,524 710,480"/>
-        <path class="edge dong" d="M710,480 Q760,524 810,480"/>
-        <path class="edge dong" d="M810,480 Q860,524 910,480"/>
-        <path class="edge dong" d="M910,480 Q960,524 1010,480"/>
-        <path class="edge dong" d="M210,480 Q410,556 610,480"/>
-        <path class="edge dong" d="M410,480 Q610,558 810,480"/>
-        <path class="edge dong" d="M610,480 Q810,556 1010,480"/>
-        <path class="edge dong" d="M310,480 Q660,582 1010,480"/>
+        <path class="edge hak" d="M400.4,412.5 L381.4,401.5 A137,137 0 0 1 618.6,401.5 L599.6,412.5"/>
+        <path class="edge hak" d="M599.6,412.5 Q559.7,312.6 500,265"/>
+        <path class="edge hak" d="M500,265 Q582.3,213.1 647.5,214.5"/>
+        <path class="edge hak" d="M647.5,214.5 Q799.1,330.4 900,470"/>
+        <path class="edge hak" d="M647.5,214.5 Q763.5,458.6 823.6,705.1"/>
+        <path class="edge hak" d="M500,265 Q275.1,354.7 100,470"/>
+        <path class="edge hak" d="M647.5,214.5 Q754.9,204.5 823.6,234.9"/>
       </g>
 
-      <!-- ── 사승 (남색 실선) : 확인된 것만 ── -->
+      <!-- ── 사승 ── -->
       <g>
-        <path class="edge sa" d="M520,60 C520,106 340,106 340,140"/>
-        <path class="edge sa" d="M520,60 C520,106 600,106 600,140"/>
-        <path class="edge sa" d="M460,266 C460,310 600,310 600,344"/>
-        <path class="edge sa" d="M600,368 C600,420 110,420 110,468"/>
+        <path class="edge sa" d="M500,470 L400.4,412.5"/>
+        <path class="edge sa" d="M500,470 L599.6,412.5"/>
+        <path class="edge sa" d="M500,265 Q569.5,253.1 647.5,214.5"/>
+        <path class="edge sa" d="M647.5,214.5 Q725.9,234.8 823.6,234.9"/>
       </g>
 
       <!-- ── 노드 ── -->
-      <g class="node" onclick="location.href='scholar-lee-yonghee.html'">
-        <circle cx="520" cy="48" r="9.5" fill="#2c2c2c" stroke="#fff" stroke-width="2.5"/>
-        <text x="520" y="27" text-anchor="middle" font-weight="700">이용희</text>
-        <text class="sm" x="520" y="72" text-anchor="middle">1917–1997</text>
-      </g>
-
-      <g class="node" onclick="location.href='scholar-noh-jaebong.html'"><circle cx="340" cy="152" r="8" fill="#4a4a4a" stroke="#fff" stroke-width="2.5"/><text x="340" y="131" text-anchor="middle">노재봉</text></g>
-      <g class="node" onclick="location.href='scholar-kim-yongkoo.html'"><circle cx="600" cy="152" r="8" fill="#4a4a4a" stroke="#fff" stroke-width="2.5"/><text x="600" y="131" text-anchor="middle">김용구</text></g>
-      <g class="node" onclick="location.href='scholar-ha-youngsun.html'"><circle cx="460" cy="254" r="8" fill="#6a6a6a" stroke="#fff" stroke-width="2.5"/><text x="460" y="233" text-anchor="middle">하영선</text></g>
-      <g class="node" onclick="location.href='scholar-chun-chaesung.html'"><circle cx="600" cy="356" r="8" fill="#8a8a8a" stroke="#fff" stroke-width="2.5"/><text x="600" y="335" text-anchor="middle">전재성</text></g>
-
-      <g class="node" onclick="location.href='scholar-kim-jonghak.html'"><circle cx="110"  cy="480" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="110"  y="461" text-anchor="middle">김종학</text></g>
-      <g class="node" onclick="location.href='scholar-choi-inho.html'"><circle cx="210"  cy="480" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="210"  y="461" text-anchor="middle">최인호</text></g>
-      <g class="node" onclick="location.href='scholar-ok-changjoon.html'"><circle cx="310"  cy="480" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="310"  y="461" text-anchor="middle">옥창준</text></g>
-      <g class="node" onclick="location.href='scholar-kwon-minju.html'"><circle cx="410"  cy="480" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="410"  y="461" text-anchor="middle">권민주</text></g>
-      <g class="node" onclick="location.href='scholar-heo-sujin.html'"><circle cx="510"  cy="480" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="510"  y="461" text-anchor="middle">허수진</text></g>
-      <g class="node" onclick="location.href='scholar-kim-jaeyoung.html'"><circle cx="610"  cy="480" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="610"  y="461" text-anchor="middle">김재영</text></g>
-      <g class="node" onclick="location.href='scholar-oh-inhwan.html'"><circle cx="710"  cy="480" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="710"  y="461" text-anchor="middle">오인환</text></g>
-      <g class="node" onclick="location.href='scholar-roh-kayeon.html'"><circle cx="810"  cy="480" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="810"  y="461" text-anchor="middle">노가연</text></g>
-      <g class="node" onclick="location.href='scholar-song-jeeye.html'"><circle cx="910"  cy="480" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="910"  y="461" text-anchor="middle">송지예</text></g>
-      <g class="node" onclick="location.href='scholar-yong-chaeyoung.html'"><circle cx="1010" cy="480" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="1010" y="461" text-anchor="middle">용채영</text></g>
-
-      <text class="genlabel" x="205" y="592">복어회 Circle of the Fish · 9인</text>
+      <g class="node" onclick="location.href='scholar-lee-yonghee.html'" data-id="lee-yonghee"><circle cx="500" cy="470" r="9.5" fill="#2c2c2c" stroke="#fff" stroke-width="2.5"/><text x="500" y="498" text-anchor="middle" font-weight="700">이용희</text><text class="sm" x="500" y="513" text-anchor="middle">1917–1997</text></g>
+      <g class="node" onclick="location.href='scholar-noh-jaebong.html'" data-id="noh-jaebong"><circle cx="400.4" cy="412.5" r="8" fill="#4a4a4a" stroke="#fff" stroke-width="2.5"/><text x="386.4" y="428.5" text-anchor="end">노재봉</text></g>
+      <g class="node" onclick="location.href='scholar-kim-yongkoo.html'" data-id="kim-yongkoo"><circle cx="599.6" cy="412.5" r="8" fill="#4a4a4a" stroke="#fff" stroke-width="2.5"/><text x="613.6" y="428.5" text-anchor="start">김용구</text></g>
+      <g class="node" onclick="location.href='scholar-ha-youngsun.html'" data-id="ha-youngsun"><circle cx="500" cy="265" r="8" fill="#6a6a6a" stroke="#fff" stroke-width="2.5"/><text x="490" y="253" text-anchor="end">하영선</text></g>
+      <g class="node" onclick="location.href='scholar-chun-chaesung.html'" data-id="chun-chaesung"><circle cx="647.5" cy="214.5" r="8" fill="#8a8a8a" stroke="#fff" stroke-width="2.5"/><text x="657.5" y="199.5" text-anchor="middle">전재성</text></g>
+      <g class="node" onclick="location.href='scholar-kim-jonghak.html'" data-id="kim-jonghak"><circle cx="823.6" cy="234.9" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="835.7" y="226.5" text-anchor="start">김종학</text></g>
+      <g class="node" onclick="location.href='scholar-choi-inho.html'" data-id="choi-inho"><circle cx="900" cy="470" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="915" y="474" text-anchor="start">최인호</text></g>
+      <g class="node" onclick="location.href='scholar-ok-changjoon.html'" data-id="ok-changjoon"><circle cx="823.6" cy="705.1" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="835.7" y="721.5" text-anchor="start">옥창준</text></g>
+      <g class="node" onclick="location.href='scholar-kwon-minju.html'" data-id="kwon-minju"><circle cx="623.6" cy="850.4" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="628.2" y="877.7" text-anchor="middle">권민주</text></g>
+      <g class="node" onclick="location.href='scholar-heo-sujin.html'" data-id="heo-sujin"><circle cx="376.4" cy="850.4" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="371.8" y="877.7" text-anchor="middle">허수진</text></g>
+      <g class="node" onclick="location.href='scholar-kim-jaeyoung.html'" data-id="kim-jaeyoung"><circle cx="176.4" cy="705.1" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="164.3" y="721.5" text-anchor="end">김재영</text></g>
+      <g class="node" onclick="location.href='scholar-oh-inhwan.html'" data-id="oh-inhwan"><circle cx="100" cy="470" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="85" y="474" text-anchor="end">오인환</text></g>
+      <g class="node" onclick="location.href='scholar-roh-kayeon.html'" data-id="roh-kayeon"><circle cx="176.4" cy="234.9" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="164.3" y="226.5" text-anchor="end">노가연</text></g>
+      <g class="node" onclick="location.href='scholar-song-jeeye.html'" data-id="song-jeeye"><circle cx="376.4" cy="89.6" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="371.8" y="70.3" text-anchor="middle">송지예</text></g>
+      <g class="node" onclick="location.href='scholar-yong-chaeyoung.html'" data-id="yong-chaeyoung"><circle cx="623.6" cy="89.6" r="6.5" fill="#a8a8a8" stroke="#fff" stroke-width="2.5"/><text x="628.2" y="70.3" text-anchor="middle">용채영</text></g>
     </svg>
   </div>
 
@@ -124,13 +122,16 @@
 
   <div class="narrow">
     <h2 class="sec">이 그물을 읽는 법</h2>
-    <p>세로로 놓인 <b style="color:#1f4e79">사승</b>은 이 전통의 뼈대이지만 전부가 아니다. 오히려
-    수를 세면 가로로 놓인 <b style="color:#c2571f">교우</b>와 <b style="color:#2f7d54">동학</b>이
-    더 많다. 같은 세대 안에서 함께 읽고 쓰는 일, 세대를 가로질러 공동 작업을 하는 일이
-    스승에게서 배우는 일만큼이나 이 전통을 지탱해 왔다.</p>
-    <p><b style="color:#7d5aa8">참조</b>는 만난 적 없는 사이에도 생긴다. 앞 세대의 글을 거듭
-    인용하는 일은 직접 배우지 않고도 이어받는 방식이며, 이 아카이브가 관계를 판정하는 가장
-    넓은 근거이기도 하다.</p>
+    <p>이 그물은 위에서 아래로 내려오는 족보가 아니라 가운데서 번지는 물결로 그린다. 동주를 가운데
+    두고 세대가 바뀔 때마다 고리가 하나씩 바깥으로 넓어진다. 뒤 세대는 앞 세대의 아래에 있지 않고,
+    더 넓은 원 위에 있다.</p>
+    <p>가운데서 바깥으로 뻗는 <b style="color:#1f4e79">사승</b>은 이 전통의 뼈대이지만 전부가 아니다.
+    수를 세면 같은 고리를 따라 도는 <b style="color:#2f7d54">동학</b>과 고리 사이를 비스듬히 잇는
+    <b style="color:#c2571f">교우</b>가 더 많다. 같은 세대 안에서 함께 읽고 쓰는 일, 세대를 가로질러
+    공동 작업을 하는 일이 스승에게서 배우는 일만큼이나 이 전통을 지탱해 왔다.</p>
+    <p><b style="color:#7d5aa8">참조</b>는 만난 적 없는 사이에도 생긴다. 가운데서 바깥 고리까지 곧장
+    닿는 선이 그것이다. 앞 세대의 글을 거듭 인용하는 일은 직접 배우지 않고도 이어받는 방식이며,
+    이 아카이브가 관계를 판정하는 가장 넓은 근거이기도 하다.</p>
   </div>
 
 </main>

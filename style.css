@@ -127,3 +127,6 @@ nav.site a.lang[aria-current]{border-bottom-color:var(--line-2)}
 a.ext{display:inline-block;font-size:13.5px;border-bottom:1px solid var(--line-2);
   text-decoration:none;padding-bottom:1px}
 a.ext:hover{border-bottom-color:var(--accent);color:var(--accent)}
+.tree-wrap svg.ripple{min-width:640px;max-width:900px;margin:0 auto}
+.ring{fill:none;stroke:var(--line-2);stroke-width:1.2}
+.edge.dong.skip{stroke-opacity:.45;stroke-width:1.3}
